@@ -1,11 +1,8 @@
 ![Dashboard Preview](mev-market-dashboard.PNG)
 # 🏪 Maven Market Sales Performance Dashboard
-### Power BI Business Intelligence Report
-
----
-
+### Power BI | DAX | Data Visualization
 ## 1. 📌 Project Objective
-Analyze Maven Market's retail sales data to track revenue, profit, transactions, and product returns — helping management make faster, data-driven business decisions.
+Analyze Maven Market's multi-country retail performance across 25+ product brands — tracking transactions, profit, return rates, and revenue vs targets to help management identify top performers and business gaps.
 
 ---
 
@@ -13,58 +10,64 @@ Analyze Maven Market's retail sales data to track revenue, profit, transactions,
 
 | Table | Description |
 |---|---|
-| `Transactions_Data` | Sales records — revenue, profit, transactions |
-| `Return_Data` | Product return records |
-| `Products` | Product brand and category info |
-| `Stores` | Store location details (city, state, country) |
-| `Calendar` | Date table for time-based analysis |
+| `Transactions_Data` | Sales records — revenue, profit, transactions per brand |
+| `Return_Data` | Product return records per brand |
+| `Products` | Product brand names and categories |
+| `Stores` | Store locations — USA, Canada, Mexico |
+| `Calendar` | Date table for weekly/monthly time analysis |
 
 ---
 
 ## 3. ⚙️ Process
 
-- Connected and cleaned 5 related tables in Power BI
-- Built a star-schema data model with proper relationships
-- Created DAX measures for KPIs and month-over-month comparisons
-- Designed an interactive 2-page dashboard with slicers, maps, and charts
+- Imported and cleaned 5 related tables in Power BI
+- Built a star-schema data model with table relationships
+- Created DAX measures for KPIs, profit margin, return rate, and revenue targets
+- Designed an interactive dashboard with slicers, map, charts, and KPI cards
 
 ---
 
 ## 4. ❓ Business Questions & KPIs Solved
 
-| Question | Finding |
+| Business Question | Answer / Finding |
 |---|---|
-| What is the total revenue vs target? | Tracked via Revenue Target gauge |
-| Which product brands drive the most profit? | Identified via pivot table by brand |
-| What is our product return rate? | Monitored per brand using Return Rate % |
-| How are sales trending month-over-month? | Compared using Last Month vs Current KPIs |
-| Which store locations perform best? | Visualized on map by city/state/country |
+| How many transactions this month? | **18,325** — 5.69% above goal (17,339) |
+| What is current month revenue? | **$71,682** — 5.61% above goal ($67.87K) |
+| Are product returns under control? | **423 returns** — 8.44% below goal (462) ✅ |
+| Which brand has highest total profit? | **Hermanos** — $21,753 profit, 58.64% margin |
+| What is overall profit margin? | **59.94%** across 113,668 total transactions |
+| Are we hitting revenue target? | **$120K actual vs $240K target** — 50% achieved |
+| Which country drives most sales? | **USA** leads, followed by Mexico and Canada |
+| How is weekly revenue trending? | Steady growth from Jan 1998, peaking Oct 1998 |
 
 ---
 
-## 5. 📊 Dashboard Insights
+## 5. 📊 Dashboard Visuals
 
-- **KPI Cards** — Total Revenue, Total Profit, Total Transactions, Total Returns with month-over-month comparison
-- **Brand Performance Table** — Shows Transactions, Profit, Profit Margin %, Return Rate per brand
-- **Map Visual** — Store performance by geographic location
-- **Treemap** — Revenue breakdown by product brand
-- **Gauge Chart** — Actual revenue vs monthly revenue target
-- **Slicers** — Filter by Year and Month for dynamic analysis
+| Visual | Purpose |
+|---|---|
+| **KPI Cards (x3)** | Current Month Transactions, Revenue & Returns vs Goal |
+| **Brand Matrix Table** | Transactions, Profit, Margin %, Return Rate per brand |
+| **World Map** | Store performance by USA / Canada / Mexico |
+| **Weekly Bar Chart** | Revenue trend Jan–Oct 1998 |
+| **Gauge Chart** | Actual revenue ($120K) vs target ($240K) |
+| **Country Slicer** | Filter dashboard by Canada, Mexico, USA |
 
 ---
 
-## 6. 💡 Project Insights
+## 6. 💡 Key Insights
 
-- Profit Margin and Return Rate are tracked **per brand** to identify weak performers
-- Month-over-month KPIs (Last Month Revenue, Profit, Returns) allow quick trend detection
-- Geographic map reveals **top-performing store regions**
-- Revenue gauge shows whether the team is **on track to hit monthly targets**
+- **Top 3 brands by profit:** Hermanos ($21,753), Ebony ($20,354), Tell Tale ($19,982)
+- **Highest return rate brands:** Horatio (1.26%), Nationeel (1.18%) — need attention
+- **Transactions & Revenue are both beating monthly goals** by 5%+
+- **Returns are below target** — a positive sign of product quality
+- **Revenue at 50% of annual target** with Q4 1998 still pending
 
 ---
 
 ## 7. ✅ Final Conclusion
 
-This dashboard gives Maven Market managers a **single view** of business health — from brand-level profitability to store-level geography — with time filters to drill into any period. It replaces manual reporting with an **always-updated, interactive** decision tool.
+Maven Market is **performing above monthly targets** in transactions and revenue with return rates well controlled. Brand-level analysis reveals Hermanos and Ebony as star performers, while Horatio and Nationeel show elevated return rates that need investigation. The dashboard enables management to monitor health across all brands and 3 countries in real time.
 
 ---
 
